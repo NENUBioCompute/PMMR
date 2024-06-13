@@ -264,12 +264,10 @@ def run(args: argparse.Namespace):
 
             scheduler.step(best_aupr)
 
-        scheduler.step(best_aupr)
 
 
 def parse_args():
     parser = argparse.ArgumentParser()
-
 
     parser.add_argument('--root_data_path', type=str, default='./data', help='Raw Data Path')
     parser.add_argument('--dataset', type=str, default='pdb', help='Datasets')
@@ -277,7 +275,6 @@ def parse_args():
                         type=str,
                         default='regression',
                         help='Objective (classification / regression)')
-
     parser.add_argument('--seed', type=int, default=0, help='Random Seed')
     parser.add_argument('--batch_size', type=int, default=128, help='Batch Size for Train(Validation/Test)')
     parser.add_argument('--max_epochs', type=int, default=200, help='Max Trainning Epochs')
