@@ -79,18 +79,8 @@ def rm2(ys_orig,ys_line):
 
 
 def mae(predictions, targets):
-    """
-    计算平均绝对误差（MAE）
-
-    参数：
-    predictions：预测值的NumPy数组
-    targets：目标值的NumPy数组
-
-    返回：
-    mae：平均绝对误差
-    """
     if len(predictions) != len(targets):
-        raise ValueError("预测值和目标值的数量不匹配")
+        raise ValueError("error")
 
     total_error = np.sum(np.abs(predictions - targets))
     mae = total_error / len(predictions)
