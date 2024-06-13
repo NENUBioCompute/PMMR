@@ -1,0 +1,2 @@
+*.csv filter=lfs diff=lfs merge=lfs -text
+data/tdc_dg_train.csv filter=lfs diff=lfs merge=lfs -text
