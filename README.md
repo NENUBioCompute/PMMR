@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PMMR
 PMMR is a tool for drug-target binding prediction.
 
@@ -45,3 +46,6 @@ To train and test classification tasks, please execute the following code:
 ```
 python main.py --objective classification --dataset bindingdb --batch_size 64 --max_epochs 500 --learning_rate 0.001
 ```
+=======
+# PMMR
+>>>>>>> d8eea27ee47bb6f5a5807575140b8b2d4e2b432a
